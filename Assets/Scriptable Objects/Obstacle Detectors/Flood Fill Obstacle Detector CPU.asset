@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 712a61a8fa5d168488aa8b1d95ecd0e9, type: 3}
+  m_Name: Flood Fill Obstacle Detector CPU
+  m_EditorClassIdentifier: 
+  _maxAllowedDistance: 1
+  _minAllowedUpCos: 0.65
+  _minAllowedNeighborCos: 0.8

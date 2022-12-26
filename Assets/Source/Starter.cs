@@ -7,6 +7,7 @@ public class Starter : MonoBehaviour
     [SerializeField] private MeshCollector _meshCollector;
     [SerializeField] private ANavMGRasterizerHandler _ANavMGHandler;
     [SerializeField] private RasterizerTraceShower _traceShower;
+    // [SerializeField] private DepthShower _depthShower;
 
     private void Start()
     {
@@ -18,5 +19,6 @@ public class Starter : MonoBehaviour
         List<FilterRendererPair> meshes = _meshCollector.CollectMeshFilters();
         _ANavMGHandler.Build(meshes);
         _traceShower.Show(_ANavMGHandler.ANavMG.Trace);
+        // _depthShower.ShowDepths(_ANavMGHandler.ANavMG.Trace.RefinedLayers);
     }
 }
